@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Power for Teachers - Dashboard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        body { background-color: #f8fafc; font-family: 'Inter', sans-serif; min-height: 100vh; }
+        h1, h2, h3 { font-family: 'Plus Jakarta Sans', sans-serif; }
+        .hero-gradient { background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%); position: relative; overflow: hidden; }
+        .module-card { transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); }
+        .module-card:hover { transform: translateY(-12px); box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.15); border-color: #3b82f6; }
+        .btn-primary { transition: all 0.3s ease; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); display: flex; align-items: center; justify-content: center; width: 100%; background-color: #0f172a; color: white !important; font-weight: bold; padding: 1rem; border-radius: 1rem; text-decoration: none !important; }
+        .btn-primary:hover { background-color: #2563eb; }
+    </style>
+</head>
+<body class="pb-20">
+    <section class="hero-gradient text-white py-20 px-6 mb-12">
+        <div class="max-w-6xl mx-auto relative z-10">
+            <h1 class="text-5xl md:text-6xl font-extrabold mb-6 tracking-tight">AI Power for <span class="text-blue-400">Teachers</span></h1>
+            <p class="text-slate-400 text-xl max-w-2xl leading-relaxed">Select a module to begin your learning journey.</p>
+        </div>
+    </section>
+
+    <main class="max-w-6xl mx-auto px-6">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Module 1 -->
+            <div class="module-card bg-white border border-slate-200 rounded-[2rem] p-8 flex flex-col group relative overflow-hidden">
+                <div class="relative z-10">
+                    <div class="w-16 h-16 bg-blue-50 text-blue-600 rounded-2xl flex items-center justify-center text-3xl mb-6">
+                        <i class="fa-solid fa-rocket"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-slate-900 mb-3">Module 1: AI Essentials</h3>
+                    <p class="text-slate-500 text-sm leading-relaxed mb-10">Dive into core technologies and prompt engineering.</p>
+                    
+                    <!-- RELATIVE LINK: This works when hosted in the same folder -->
+                    <a href="ai_for_teachers_bento.html" class="btn-primary gap-3 text-base">
+                        Enter Module <i class="fa-solid fa-circle-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
